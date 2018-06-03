@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+h1{
+  text-align: center;
+  font-family: Helvetica;
+
+}
+body{
+  background-color: rgba(150, 220, 128, .5);
+}
+header{
+  width: 100%;
+
+
+  background-color: rgba(255, 255, 128, .5);
+}
+
+nav{
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: red;
+  float:none;
+
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav > ul{
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+  position:relative;
+}
+
+nav > ul li {
+  display: table-cell;
+}
+
+/*Sub-menu*/
+nav > ul > li:hover > ul{
+  display: block;
+  height: 100%;
+}
+
+nav > ul > li > ul {
+  display: block;
+  position: absolute;
+  background: #000;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  height:0%;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+nav > ul >li >ul{
+  display: none;
+}
+nav > ul li a {
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+  background: green;
+}
+
+nav > ul >li> a span {
+  background: #174459;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top:-55px;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul >li> a span .icon {
+  display: block;
+  line-height: 60px;
+}
+
+nav > ul > li > a:hover > span {
+  top:0;
+
+
+}
+
+/*colores iconos*/
+nav ul li a .inicio{
+  background: red;
+}
+nav ul li a .productos{
+  background: green;
+}
+nav ul li a .servicios{
+  background: brown;
+}
+nav ul li a .quienesSomos{
+  background: blue;
+}
+nav ul li a .contacto{
+  background: rgb(255, 25, 128);
+}
